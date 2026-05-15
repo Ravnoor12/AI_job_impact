@@ -1,0 +1,39 @@
+ai_risk_category:
+  drift_status: false
+  p_value: 0.6851907561772641
+ai_risk_score:
+  drift_status: false
+  p_value: 0.15335416973666408
+country:
+  drift_status: false
+  p_value: 0.6830701851478075
+education_level:
+  drift_status: false
+  p_value: 0.813576299568785
+experience_level:
+  drift_status: false
+  p_value: 0.999999999618343
+job_openings:
+  drift_status: false
+  p_value: 0.75278259050042
+job_survival_class:
+  drift_status: false
+  p_value: 1.0
+job_title:
+  drift_status: false
+  p_value: 0.5526695947674156
+primary_skill:
+  drift_status: false
+  p_value: 0.989006711754222
+salary:
+  drift_status: false
+  p_value: 0.9561193602532854
+salary_bucket:
+  drift_status: false
+  p_value: 1.0
+skill_demand_score:
+  drift_status: false
+  p_value: 0.4125977675998797
+year:
+  drift_status: false
+  p_value: 0.4845927125998847

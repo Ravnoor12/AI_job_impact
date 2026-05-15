@@ -1,0 +1,31 @@
+columns:
+  - job_title: object
+  - country: object
+  - experience_level: object
+  - education_level: object
+  - year: int64
+  - salary: float64
+  - ai_risk_score: float64
+  - primary_skill: object
+  - skill_demand_score: int64
+  - job_openings: int64
+  - job_survival_class: int64
+  - salary_bucket: object
+  - ai_risk_category: object
+
+numerical_columns:
+  - year
+  - salary
+  - ai_risk_score
+  - skill_demand_score
+  - job_openings
+  - job_survival_class
+
+categorical_columns:
+  - job_title
+  - country
+  - experience_level
+  - education_level
+  - primary_skill
+  - salary_bucket
+  - ai_risk_category
