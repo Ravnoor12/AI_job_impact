@@ -1,8 +1,9 @@
 from jobImpact.components.data_ingestion import DataIngestion
 from jobImpact.components.data_validation import DataValidation
 from jobImpact.components.data_transformation import DataTransformation
-from jobImpact.entity.artifact_entity import DataIngestionArtifact,DataValidationArtifact
-from jobImpact.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig
+from jobImpact.components.model_trainer import ModelTrainer
+from jobImpact.entity.artifact_entity import DataIngestionArtifact,DataValidationArtifact, DataTransformationArtifact
+from jobImpact.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainerConfig
 from jobImpact.entity.config_entity import TrainingPipelineConfig
 from jobImpact.logging.logger import logging
 from jobImpact.exception.exception import JobImpactException
@@ -33,5 +34,9 @@ if __name__=="__main__":
         logging.info("Data transformation completed and artifact is created")
         print(data_transformation_artifact)
 
+        logging.info("initiating model trainer")
+        model_trainer_config=ModelTrainerConfig(training_pipeline_config)
+        model_trainer = ModelTrainer(model_trainer_config=model_trainer_config,data_transformation_artifact=data_transformation_artifact)
+        model_trainer_artifact=model_trainer.initiate_model_trainer()
     except Exception as e:
         raise JobImpactException(e,sys)
