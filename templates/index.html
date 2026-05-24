@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Job Impact Predictor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h3 class="mb-0">AI Job Impact Predictor</h3>
+            </div>
+            <div class="card-body">
+                
+                <!-- This section shows the result after the form is submitted -->
+                {% if prediction is defined %}
+                    <div class="alert alert-success">
+                        <h4 class="mb-0">Predicted Job Survival Class: <strong>{{ prediction }}</strong></h4>
+                    </div>
+                {% endif %}
+
+                <!-- The Input Form -->
+                <!-- The Input Form -->
+                <form action="/predict_form" method="POST">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label>Job Title</label>
+                            <input type="text" name="job_title" class="form-control" required placeholder="e.g., Data Scientist">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>Country</label>
+                            <input type="text" name="country" class="form-control" required placeholder="e.g., USA">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>Experience Level</label>
+                            <select name="experience_level" class="form-select" required>
+                                <option value="Entry">Entry</option>
+                                <option value="Mid">Mid</option>
+                                <option value="Senior">Senior</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>Education Level</label>
+                            <select name="education_level" class="form-select" required>
+                                <option value="Bachelor">Bachelor</option>
+                                <option value="Master">Master</option>
+                                <option value="PhD">PhD</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>Prediction Year</label>
+                            <input type="number" name="year" class="form-control" required value="2026">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>Annual Salary (USD)</label>
+                            <input type="number" step="0.01" name="salary" class="form-control" required placeholder="e.g., 65000">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>AI Risk Score</label>
+                            <input type="number" step="0.01" name="ai_risk_score" class="form-control" required placeholder="0.35">
+                            <small class="form-text text-muted">Estimate from 0.0 (Safe) to 1.0 (Replaced by AI).</small>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>Primary Skill</label>
+                            <input type="text" name="primary_skill" class="form-control" required placeholder="e.g., Python">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>Skill Demand Score</label>
+                            <input type="number" name="skill_demand_score" class="form-control" required placeholder="85">
+                            <small class="form-text text-muted">Estimate from 0 (Obsolete) to 100 (Extremely high demand).</small>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>Global Job Openings</label>
+                            <input type="number" name="job_openings" class="form-control" required placeholder="25000">
+                            <small class="form-text text-muted">Estimate current active job postings globally.</small>
+                        </div>
+                        <!-- Note: salary_bucket and ai_risk_category were removed! Backend handles them. -->
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 mt-3">Predict Survival Class</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

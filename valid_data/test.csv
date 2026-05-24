@@ -1,0 +1,31 @@
+job_title,country,experience_level,education_level,year,salary,ai_risk_score,primary_skill,skill_demand_score,job_openings,salary_bucket,ai_risk_category
+Data Scientist,USA,Senior,Master,2022,61931.03,0.32,Python,88,39158,High,Medium Risk
+Software Engineer,India,Senior,Bachelor,2032,21330.84,0.52,Java,80,7265,High,Medium Risk
+Data Scientist,Canada,Mid,Bachelor,2015,24211.17,0.25,Python,70,22962,High,Low Risk
+Data Scientist,India,Entry,PhD,2034,11794.86,0.44,Python,95,17023,Medium,Medium Risk
+Data Analyst,Canada,Entry,PhD,2035,17999.26,0.75,SQL,61,3433,Medium,High Risk
+DevOps Engineer,UK,Entry,Master,2033,29676.4,0.38,Docker,80,18568,High,Medium Risk
+Cybersecurity Analyst,USA,Entry,PhD,2028,27813.44,0.28,Security,81,7396,High,Low Risk
+Cloud Engineer,Germany,Entry,Bachelor,2025,24684.38,0.35,AWS,86,26658,High,Medium Risk
+Data Scientist,USA,Mid,Bachelor,2026,45617.71,0.36,Python,87,3747,High,Medium Risk
+Cloud Engineer,Canada,Mid,Bachelor,2029,39526.54,0.39,AWS,62,4556,High,Medium Risk
+DevOps Engineer,USA,Mid,Bachelor,2032,56686.09,0.37,Docker,80,15502,High,Medium Risk
+Cybersecurity Analyst,Australia,Senior,Master,2033,47853.7,0.33,Security,84,44323,High,Medium Risk
+Software Engineer,Australia,Entry,Bachelor,2022,20842.62,0.42,Java,68,24897,High,Medium Risk
+Cybersecurity Analyst,USA,Entry,Bachelor,2027,26043.05,0.27,Security,79,24483,High,Low Risk
+Cybersecurity Analyst,UK,Senior,Master,2020,37951.56,0.2,Security,67,45974,High,Low Risk
+Cloud Engineer,Germany,Entry,PhD,2023,22310.64,0.33,AWS,76,27531,High,Medium Risk
+Data Scientist,Canada,Senior,Bachelor,2032,55147.38,0.42,Python,63,20457,High,Medium Risk
+Software Engineer,India,Mid,Master,2023,10992.95,0.43,Java,63,41757,Medium,Medium Risk
+DevOps Engineer,India,Senior,Master,2016,14701.85,0.21,Docker,77,7873,Medium,Low Risk
+Software Engineer,USA,Mid,Master,2023,38667.48,0.43,Java,69,27557,High,Medium Risk
+Data Scientist,India,Senior,PhD,2025,21163.97,0.35,Python,90,12534,High,Medium Risk
+Software Engineer,Australia,Mid,Master,2035,35680.12,0.55,Java,82,26851,High,Medium Risk
+Business Analyst,India,Mid,Bachelor,2022,7699.62,0.72,Excel,99,25276,Low,High Risk
+DevOps Engineer,Canada,Mid,PhD,2033,41105.95,0.38,Docker,77,18262,High,Medium Risk
+AI Researcher,Canada,Mid,Master,2022,43586.94,0.12,Deep Learning,85,22243,High,Low Risk
+ML Engineer,Canada,Mid,Bachelor,2016,32823.93,0.16,Python,88,49984,High,Low Risk
+Data Scientist,India,Senior,Bachelor,2028,22880.32,0.38,Python,83,3027,High,Medium Risk
+Product Manager,USA,Mid,Master,2034,60582.5,0.49,Strategy,70,23002,High,Medium Risk
+Business Analyst,Canada,Mid,PhD,2015,18952.96,0.65,Excel,94,13666,Medium,High Risk
+Data Scientist,Australia,Senior,Master,2035,59279.62,0.45,Python,98,39952,High,Medium Risk
