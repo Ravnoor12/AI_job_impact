@@ -28,8 +28,9 @@ jobs:
             python-version: '3.14'
 
       - name: Install dependencies
-        run: pip install -r requirement.txt
+        run: | 
+           pip install -r requirement.txt
            pip install pytest httpx       
 
       - name: Run unit tests
-        run: echo "Running unit tests" | pip install pytest httpx && pytest test_app.py
+        run: pytest test_app.py
