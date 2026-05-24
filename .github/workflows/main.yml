@@ -22,5 +22,14 @@ jobs:
       - name: Lint code
         run: echo "Linting repository"
 
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+            python-version: '3.14'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+           pip install pytest httpx       
+
       - name: Run unit tests
         run: echo "Running unit tests" | pip install pytest httpx && pytest test_app.py
