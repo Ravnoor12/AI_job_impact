@@ -33,4 +33,7 @@ jobs:
            pip install pytest httpx       
 
       - name: Run unit tests
+        env:
+          MONGO_DB_URL: ${{ secrets.MONGO_DB_URL }}
+          MLFLOW_TRACKING_PASSWORD: ${{ secrets.MLFLOW_TRACKING_PASSWORD }}
         run: pytest test_app.py
