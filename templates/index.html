@@ -27,7 +27,19 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label>Job Title</label>
-                            <input type="text" name="job_title" class="form-control" required placeholder="e.g., Data Scientist">
+                            <select name="job_title" class="form-select" required>
+                                <option value="" disabled selected>Select a Job Title...</option>
+                                <option value="Data Scientist">Data Scientist</option>
+                                <option value="Software Engineer">Software Engineer</option>
+                                <option value="Data Analyst">Data Analyst</option>
+                                <option value="DevOps Engineer">DevOps Engineer</option>
+                                <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+                                <option value="Cloud Engineer">Cloud Engineer</option>
+                                <option value="Business Analyst">Business Analyst</option>
+                                <option value="AI Researcher">AI Researcher</option>
+                                <option value="ML Engineer">ML Engineer</option>
+                                <option value="Product Manager">Product Manager</option>
+                                </select>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label>Country</label>
